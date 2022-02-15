@@ -1,0 +1,5 @@
+HashMap checks keys and adds to hash regarding objects hashCode. HashCode and equals implemented 
+correctly. But there problem after adding to the hashTable e.setVisited = true -> changes object hashCode value, 
+and it is not correct for further comparision. Thats why we need make all key elements (at this case all name salary and visited 
+object members has to be immutable). To correct we just need to delete all setters and remove line set visited. 
+ 

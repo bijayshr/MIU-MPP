@@ -1,0 +1,9 @@
+reason of problem B:
+
+l2.contains (List.contains) contains method of interface List<>, At this example implements ArrayList<>; 
+ArrayList.contains(Object o)  uses method indexOf -> indexOfRange. 
+
+in indexOfRange method calls o.equals (o instance of Object), where it checks if this == o, it means it will 
+check only reference to the object, but in our case we are checking name and salary, to make it work we need override 
+equals method, in our case is overloaded. Input type is different. To correct it we need get Object argument and 
+implement correct one as shown in solution.

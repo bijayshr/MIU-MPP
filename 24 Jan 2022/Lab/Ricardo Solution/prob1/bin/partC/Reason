@@ -1,0 +1,6 @@
+Here at this problem we faced incorrect override methos, because of using HashMap and particulary method 
+containsKey() -> uses to compare hashcode of key object. but in our example as the key is Employee and 
+all employee created have different object hashcode. Thats why we couldn't remove duplicates. 
+
+to correct we need override key with differentiation members (name and salary). 
+ 
